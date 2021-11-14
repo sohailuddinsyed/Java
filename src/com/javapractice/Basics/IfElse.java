@@ -22,12 +22,13 @@ public class IfElse {
 
         //SWITCH
         a=3;
-        switch(a){
-            case 1:
-                System.out.println("One");
+        String s="abc";
+        switch(s){
+            case "abc":
+                System.out.println("ABC string");
                 break;
-            case 2:
-                System.out.println("Two");
+            case "pqr":
+                System.out.println("PQR string");
                 break;
             default:
                 System.out.println("Neither one nor two");

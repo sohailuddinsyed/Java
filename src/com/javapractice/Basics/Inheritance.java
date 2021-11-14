@@ -49,7 +49,7 @@ class B1 extends A1{
 }
 class C1 extends B1{
     void show(){
-        System.out.println("Inside c");
+        System.out.println("Inside C");
     }
 }
 class DynamicMethod{

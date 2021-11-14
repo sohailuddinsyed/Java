@@ -55,18 +55,24 @@ class Company{
     void show(){
         System.out.println(eid+":"+sal+":"+att);
     }
-//    static{
-//        att=100;
-//    }
+    Company(){
+        System.out.println("Constructor Created");
+    }
+    static{
+        att=100;
+        System.out.println("In Static block  ");
+    }
     public static void main(String args[]){
         Company e1=new Company();
         e1.eid=10;
         e1.sal=2000;
-        e1.att=99;
+       // e1.att=99;
 
 
         Company e2=new Company();
-        e2.att=34;
+        e2.eid=20;
+        e2.sal=4000;
+        //e2.att=95;
 
         e1.show();
         e2.show();
@@ -91,7 +97,6 @@ class InnerDemo{
         Outer.Inner i1=o1.new Inner();
 //        Outer.Inner i1=new Outer.Inner();
         i1.display();
-
-
     }
 }
+
